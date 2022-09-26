@@ -1,0 +1,43 @@
+* {
+    font-family: 'Silkscreen', cursive;
+}
+
+div select {
+    margin-left: 50px;
+    border-radius: 4px;
+    padding: 7px;
+    margin-top: 10px;
+    border: none !important;
+    background-color: rgb(255, 255, 255);
+    color: #31073d;
+    outline: none;
+    justify-content: center;
+}
+
+.tipo {
+    list-style-type: none;
+    color: #2e023b;
+    text-decoration-line: none;
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Carga {
+    margin-top: 125px;
+    margin-right: 50px;
+}
+
+.cargando{
+    background-color: rgb(255, 255, 255);
+    width:150px;
+    margin-left: 850px;
+    margin-top: 35px;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.Crear{
+    margin-right: 40px;
+
+}

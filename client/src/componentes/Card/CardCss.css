@@ -1,0 +1,19 @@
+.CardStyle {
+    background: url('https://pm1.narvii.com/7240/fc833344f14ba514b668795bb2d5e042f306e972r4-750-375_00.jpg');
+    margin: 35px;
+    width: 17rem;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 400ms ease;
+    box-sizing: content-box;
+    min-height: 150px;
+    border-color: #22043dda;
+    border-width: 1.5px;
+    border-style: solid;
+  }
+
+  .tipo {
+    display: flex;
+    justify-content: space-around;
+  }
+  
