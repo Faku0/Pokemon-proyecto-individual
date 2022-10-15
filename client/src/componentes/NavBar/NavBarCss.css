@@ -1,0 +1,62 @@
+.header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.busc{
+    list-style: none;
+}
+.busc li{
+    display: inline-block;
+    padding: 0px 1px;
+}
+
+.crear{
+    width: 100%;
+    padding: 14px 25px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    float:right;
+    color: black;
+    text-decoration: none;
+    max-width: 250px;
+}
+
+.crear:hover {
+    box-shadow: 0 17px 40px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
+}
+
+.titulo {
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.textocrear {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.buscador {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.buscar {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.buscar:hover {
+    box-shadow: 0 17px 40px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
+}

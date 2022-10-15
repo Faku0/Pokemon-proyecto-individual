@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import Card from "../Card/Card";
 import Paginado from "../Paginado/Paginado";
 import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 import "./HomeCss.css"
 
 export default function Home (){
@@ -55,24 +56,25 @@ export default function Home (){
 
 
     return(
-        <div> 
-         <h1 className="Titulo"> PROYECTO POKEDEX </h1>
-         <Link className="Crear" to= '/crear'>Crea tu pokemon</Link>
-            <NavBar/>
-         <button onClick={a =>{handleClick(a)}}>
-            GOOOOD
+        <div id="fondo">
+            <div>
+                <div className="Nav">
+            <NavBar/>      
+                </div> 
+         <button className="recarga" onClick={a =>{handleClick(a)}}>
+            Recargar Pokemons
          </button>
-            <select onChange={s => handleOrdenName(s)}>
+            <select className="select" onChange={s => handleOrdenName(s)}>
                 <option value="Filt">Por nombre:</option>
                 <option value="asc">A-Z</option>
                 <option value="desc">Z-A</option>
             </select>
-            <select onChange={e => handleFiltAtaque(e)}>
+            <select className="select" onChange={e => handleFiltAtaque(e)}>
                 <option value="Ataque">Por ataque:</option>
                 <option value="Mayor Ataque">Mayor ataque</option>
                 <option value="Menor Ataque">Menor ataque</option>
             </select>
-            <select onChange={t => handleFiltTipo(t)}>
+            <select className="select" onChange={t => handleFiltTipo(t)}>
                 <option value="All">Por tipo:</option>
                 <option value="normal">Normal</option>
                 <option value="fighting">Lucha</option>
@@ -95,12 +97,15 @@ export default function Home (){
                 <option value="unknown">Desconocido</option>
                 <option value="shadow">Oscuro</option>
             </select>
-            <select onChange={c => handleFiltCreados(c)}>
+            <select className="select" onChange={c => handleFiltCreados(c)}>
                 <option value="all">Todos</option>
                 <option value="created">Creados</option>
                 <option value="api">Existentes</option>
             </select>
             <Paginado pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} pagina={pagina}/>
+            </div>
+
+            <div className="cards"> 
             { currentPokemons.length >= 1 ? currentPokemons.map(inf =>{
                 console.log(inf)
                 return(
@@ -111,10 +116,14 @@ export default function Home (){
                     </fragment>
                 )
             })  :  <div className="Carga">                    
-                    <img alt="" src="https://i.gifer.com/embedded/download/7A9W.gif"/>
+                    <img className="fotoCarga" alt="" src="https://i.gifer.com/embedded/download/7A9W.gif"/>
                     <p className="cargando"> Cargando...</p>
                    </div>
          }
+         </div>
+         <div>
+            <Footer/>
+         </div>
         </div>
     )
 }

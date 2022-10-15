@@ -1,19 +1,143 @@
 .CardStyle {
-    background: url('https://pm1.narvii.com/7240/fc833344f14ba514b668795bb2d5e042f306e972r4-750-375_00.jpg');
-    margin: 35px;
-    width: 17rem;
-    border-radius: 10px;
-    display: inline-block;
-    transition: all 400ms ease;
-    box-sizing: content-box;
-    min-height: 150px;
-    border-color: #22043dda;
-    border-width: 1.5px;
-    border-style: solid;
-  }
+  background: url('https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/masters/forest.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 35px;
+  width: 17rem;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 400ms ease;
+  box-sizing: content-box;
+  min-height: 150px;
+  border-color: #000000da;
+  border-width: 2px;
+  border-style: solid;
+  color: black;
+}
 
-  .tipo {
-    display: flex;
-    justify-content: space-around;
-  }
-  
+.name {
+  width: 100%;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  border-radius: 5px;
+  max-width: 170px;
+  background-color: white;
+}
+
+.tipo{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+li{
+  align-content: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.tip{
+  width: 100%;
+  list-style: none;
+}
+
+.tip li{
+  display: inline-block;
+  padding: 0px 4px;
+}
+
+.tipos{
+  width: 100%;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.fire{
+  color:#F57D31
+}
+
+.normal{
+  color: #AAA67F
+}
+
+.fighting{
+  color: #C12239
+}
+
+.flying{
+  color: #A891EC
+}
+
+.ground{
+  color: #DEC16B
+}
+
+.poison{
+  color: #A43E9E
+}
+
+.rock{
+  color: #B69E31
+}
+
+.bug{
+  color: #A7B723
+}
+
+.ghost{
+  color: #70559B
+} 
+
+.steel{
+  color: #B7B9D0
+}
+
+.water{
+  color: #6493EB
+}
+
+.grass{
+  color: #74CB48
+}
+
+.electric{
+  color: #F9CF30
+}
+
+.psychic{
+  color: #FB5584
+}
+
+.ice{
+  color: #9AD6DF
+} 
+
+.dragon{
+  color: #7037FF
+}
+
+.dark{
+  color: #75574C
+}
+
+.fairy{
+  color: #E69EAC
+}
+
+.unknown{
+  color: #A9A7AA
+}
+
+.shadow{
+  color: #453F3A
+}
